@@ -11,34 +11,30 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import { FaHome, FaInfo, FaComment, FaPhone, FaShoppingCart } from 'react-icons/fa';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
       text: "Home",
-      icon: <HomeIcon />,
+      icon: <FaHome />,
     },
     {
       text: "About",
-      icon: <InfoIcon />,
+      icon: <FaInfo />,
     },
     {
       text: "Testimonials",
-      icon: <CommentRoundedIcon />,
+      icon: <FaComment />,
     },
     {
       text: "Contact",
-      icon: <PhoneRoundedIcon />,
+      icon: <FaPhone />,
     },
     {
       text: "Cart",
-      icon: <ShoppingCartRoundedIcon />,
+      icon: <FaShoppingCart />,
     },
   ];
   return (
